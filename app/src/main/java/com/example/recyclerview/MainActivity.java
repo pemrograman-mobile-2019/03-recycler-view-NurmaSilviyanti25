@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         RecyclerView rv = findViewById(R.id.rvContact);
-        contacts = Contact.createContactsList(10);
+        contacts = Contact.createContactsList(30);
         ContactsAdapter contactsAdapter = new ContactsAdapter(contacts);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         rv.setAdapter(contactsAdapter);
